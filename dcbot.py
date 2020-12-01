@@ -5,7 +5,7 @@ client = commands.Bot(command_prefix="-")
 
 @client.event
 async def on_ready():
-    print("Bot Is Ready")
+    print("Bot1 Is Ready")
 	
 @client.command
 async def hello(ctx):
