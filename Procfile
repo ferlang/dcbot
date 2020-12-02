@@ -1,1 +1,1 @@
-worker dcbot.py
+worker: dcbot2.py
