@@ -4,6 +4,15 @@ import os
 
 client = commands.Bot(command_prefix = ".")
 
+async def my_task(ctx, username):
+    while True:
+        await ctx.send("Hello")
+        await asyncio.sleep(10)
+
+@client.command()
+async def info(ctx, username):
+    client.loop.create_task(my_task(ctx, username))
+
 @client.event
 async def on_ready():
     print("Bot1 Is Ready")
